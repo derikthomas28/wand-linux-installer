@@ -3,7 +3,7 @@
 set -e
 
 REPO="https://github.com/DeckCheatz/wemod-launcher.git"
-INSTALL_DIR="$HOME/wand-launcher"
+INSTALL_DIR="$HOME/.local/share/wand-launcher"
 
 echo "==> Installing dependencies..."
 sudo pacman -S --needed git python tk
@@ -24,10 +24,7 @@ echo "=============================================="
 echo " Wand Linux setup complete"
 echo "=============================================="
 echo
-echo "Launcher installed at:"
-echo "$INSTALL_DIR/wemod"
-echo
-echo "Add this to the Steam game's Launch Options:"
+echo "Add this to your Steam game's Launch Options:"
 echo
 echo "$INSTALL_DIR/wemod %command%"
 echo
